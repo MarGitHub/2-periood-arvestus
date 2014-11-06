@@ -1,8 +1,4 @@
 
-<?php 
-	$username = "Margit"; 
-	$age = 20 ;
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +8,10 @@
   </head>
 
   <body>
-	<a href="result.php">Result</a>
+  <?php $page_link = "result.php";
+		$username = "Margit";
+		$age = 20; ?>
+	<a href="<?php echo $page_link.'?username?'.$username.'&age=?'.$age; ?>">Result</a>
+	
   </body>
 </html>
