@@ -9,10 +9,11 @@
     <!-- Kustuta see funktsioon (print_r() koos <pre> elemendiga) pärast seda, kui oled veendunud, et programm töötab. -->
     
 	<?php 
+	$username = $_POST["username"];
+    $sex = $_POST["sex"];
 	
-	
-	if ($username = $_POST ["username"] && $_POST["sex"]){
-	echo "Tere, {$username}, tundub, et olete {$sex}";
+	if ($username = $_POST["username"] && $sex = $_POST["sex"]){
+	echo "Tere, {$username}, tundub, et olete {$sex}.";
 	}
 	elseif (empty($sex) ) {
 	echo	"Palun minge tagasi ja valige sugu."; 
@@ -22,6 +23,9 @@
 	}
 	elseif (empty($username) && empty($sex)) {
 	echo "Palun minge tagasi ja täitke väljad.";
+	}
+	else {
+	echo "Tundub, et sattusid siia otseteed pidi."; 
 	}
 	
 	?>
