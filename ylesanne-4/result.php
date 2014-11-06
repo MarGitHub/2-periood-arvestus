@@ -1,7 +1,7 @@
 <?php
 require('index.php');
 
-$arvestus = isset($_COOKIE["arvestus"]) ? $_COOKIE : ""; 
+$arvestus = isset($_COOKIE["arvestus"]) ? $_COOKIE["arvestus"] : ""; 
 if ($arvestus="arvestus") {
 echo $value; 
 }
