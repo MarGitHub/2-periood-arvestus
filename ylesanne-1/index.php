@@ -1,3 +1,9 @@
+
+<?php 
+	$username = "Margit"; 
+	$age = 20 ;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,5 +12,6 @@
   </head>
 
   <body>
+	<a href="result.php">Result</a>
   </body>
 </html>

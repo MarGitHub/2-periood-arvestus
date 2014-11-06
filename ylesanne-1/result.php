@@ -1,3 +1,19 @@
+<?php 
+	include "index.php";
+	if ($age >= 18 ) {
+	echo "Tere, {$username}! Olete lehekülje vaatamiseks piisavalt vana. "; 
+	}
+	else {
+	echo "Tere, {$username}! Kahjuks olete liiga noor selle lehekülje külastamiseks."; 
+	}
+	if (!isset($username) || $username ==""){
+	echo 'Palun sisesta kasutajanimi!'; 
+	}
+	if (!isset($age) || $age == ""){
+	echo 'Palun sisesta vanus!'; 
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
